@@ -1,6 +1,5 @@
-package com.maximus.jwd.entity;
+package com.maximus.jwd.dao.domain;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Objects;
 import java.util.Set;

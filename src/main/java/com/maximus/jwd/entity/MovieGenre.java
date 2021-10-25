@@ -1,5 +1,6 @@
 package com.maximus.jwd.entity;
 
+
 public enum MovieGenre {
     CARTOON("Cartoon"),
     ACTION("Action"),
@@ -14,5 +15,9 @@ public enum MovieGenre {
 
     MovieGenre(String name) {
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 }

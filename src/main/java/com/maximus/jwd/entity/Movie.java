@@ -5,10 +5,10 @@ import java.util.Objects;
 
 public class Movie {
     private long id;
-    private final String title;
+    private String title;
     private MovieGenre[] movieGenres;
-    private final int duration;
-    private final int releaseYear;
+    private int duration;
+    private int releaseYear;
 
     public Movie(String title, MovieGenre[] movieGenres, int duration, int releaseYear) {
         this.title = title;
@@ -35,6 +35,18 @@ public class Movie {
 
     public String getTitle() {
         return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+    public void setReleaseYear(int releaseYear) {
+        this.releaseYear = releaseYear;
     }
 
     public MovieGenre[] getMovieGenres() {
