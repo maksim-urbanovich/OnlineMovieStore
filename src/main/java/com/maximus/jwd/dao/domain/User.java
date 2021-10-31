@@ -21,6 +21,45 @@ public class User {
         this.yearOfBirth = yearOfBirth;
     }
 
+    public User(long id, String name, String email, char[] password) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+
+    public User(String name, String email, char[] password, int yearOfBirth) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.yearOfBirth = yearOfBirth;
+    }
+
+    public User(String name, String email, char[] password) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+
+    public User(long id, String name, String email, char[] password, int yearOfBirth, Set<Long> setOfBoughtMovies, HashMap<Long, Integer> filmsRating) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.yearOfBirth = yearOfBirth;
+        this.setOfBoughtMovies = setOfBoughtMovies;
+        this.filmsRating = filmsRating;
+    }
+
+    public User(String name, String email, char[] password, int yearOfBirth, Set<Long> setOfBoughtMovies, HashMap<Long, Integer> filmsRating) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.yearOfBirth = yearOfBirth;
+        this.setOfBoughtMovies = setOfBoughtMovies;
+        this.filmsRating = filmsRating;
+    }
+
     public String getName() {
         return name;
     }
